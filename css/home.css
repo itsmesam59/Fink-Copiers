@@ -2,6 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'consolas', sans-serif;
+}
+
+.icon {
+    font-size: large;
+}
+
+.icon2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.icon3 {
+    font-size: x-large;
 }
 
 /*         Header                  */
@@ -30,7 +44,7 @@ header a{
 
 .header-logos {
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
 
@@ -39,6 +53,61 @@ header a{
 .slider {
     height: 89.5vh;
     border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.slid1 {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slid2 {
+    width: 50%;
+    height: 100%;
+    background-image: url(../assets/silder1.jpg);
+    background-size: 100% 100%;
+    animation: changeImage 30s infinite;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url(../assets/silder1.jpg);
+    }
+    25% {
+        background-image: url(../assets/slider2.avif);
+    }
+    50% {
+        background-image: url(../assets/slider3.webp);
+    }
+    75% {
+        background-image: url(../assets/slider4.png);
+    }
+    100% {
+        background-image: url(../assets/silder1.jpg);
+    }
+
+}
+
+.slid1 h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.slid1 p{
+    margin: 10px;
+    font-size: medium;
+}
+
+.slid1 button {
+    width: 120px;
+    height: 45px;
+    font-size: medium;
+    margin: 10px;
 }
 
 
@@ -294,7 +363,7 @@ header a{
 
 .slider2 {
     border: 1px solid;
-    height: 40vh;
+    height: 80vh;
 }
 
 
@@ -500,4 +569,5 @@ footer{
 
 .f2{
     display: flex;
+    gap: 50px;
 }
