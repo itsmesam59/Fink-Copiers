@@ -52,11 +52,12 @@ header a{
 
 .slider {
     height: 89.5vh;
-    border: 1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background-color: rgb(49, 47, 47);
+    color: rgb(245, 245, 87);
 }
 
 .slid1 {
@@ -69,26 +70,26 @@ header a{
 .slid2 {
     width: 50%;
     height: 100%;
-    background-image: url(../assets/silder1.jpg);
+    background-image: url(../assets/Promotional-Sparta-Photo-Mugs.webp);
     background-size: 100% 100%;
     animation: changeImage 30s infinite;
 }
 
 @keyframes changeImage {
     0% {
-        background-image: url(../assets/silder1.jpg);
+        background-image: url(../assets/Promotional-Sparta-Photo-Mugs.webp);
     }
     25% {
-        background-image: url(../assets/slider2.avif);
+        background-image: url(../assets/OFFSET.png);
     }
     50% {
-        background-image: url(../assets/slider3.webp);
-    }
-    75% {
         background-image: url(../assets/slider4.png);
     }
+    75% {
+        background-image: url(../assets/T-Shirt-Printing-PNG-Photo.png);
+    }
     100% {
-        background-image: url(../assets/silder1.jpg);
+        background-image: url(../assets/Promotional-Sparta-Photo-Mugs.webp);
     }
 
 }
