@@ -51,64 +51,119 @@ header a{
 /*                          Slider                                         */
 
 .slider {
-    height: 89.5vh;
+    width: 100%;
+    height: 89.7vh;
+}
+.slid1 {
+    width: 100%;
+    height:96%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    background-color: rgb(49, 47, 47);
-    color: rgb(245, 245, 87);
 }
-
-.slid1 {
-    margin-left: 5rem;
+#slid11{
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/left-arrow.png);
+    background-size: 100% 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.slid12{
+    width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
-
-.slid2 {
-    width: 50%;
-    height: 100%;
-    background-image: url(../assets/Promotional-Sparta-Photo-Mugs.webp);
-    background-size: 100% 100%;
-    animation: changeImage 30s infinite;
-}
-
-@keyframes changeImage {
-    0% {
-        background-image: url(../assets/Promotional-Sparta-Photo-Mugs.webp);
-    }
-    25% {
-        background-image: url(../assets/OFFSET.png);
-    }
-    50% {
-        background-image: url(../assets/slider4.png);
-    }
-    75% {
-        background-image: url(../assets/T-Shirt-Printing-PNG-Photo.png);
-    }
-    100% {
-        background-image: url(../assets/Promotional-Sparta-Photo-Mugs.webp);
-    }
-
-}
-
-.slid1 h1 {
-    font-size: 50px;
+.slid12 p{
+    font-size: large;
     margin: 10px;
 }
-
-.slid1 p{
-    margin: 10px;
-    font-size: medium;
+.slid12 h1{
+    font-size: 60px;
 }
-
-.slid1 button {
+.slid12 button{
     width: 150px;
-    height: 45px;
-    font-size: medium;
+    height: 50px;
     margin: 10px;
+}
+.slid13{
+    width: 45%;
+    height: 100%;
+}
+#slid14{
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/right-arrow.png);
+    background-size: 100% 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.slid2 {
+    width: 100%;
+    height: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#slid21 {
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#slid22 {
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#slid23 {
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#slid24 {
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#slid21:hover {
+    background-color: grey;
+}
+#slid22:hover {
+    background-color: grey;
+}
+#slid23:hover {
+    background-color: grey;
+}
+#slid24:hover {
+    background-color: grey;
+}
+.slidimg {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#slidimg1 {
+    width: 100%;
+    height: 100%;
 }
 
 
