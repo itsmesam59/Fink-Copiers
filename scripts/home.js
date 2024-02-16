@@ -1,6 +1,6 @@
-// Slider 1
+// Hero Section slider
 
-let cnt = 0;
+let count1 = 0;
 
 let x = document.getElementsByClassName("slidimg");
 let y = document.getElementById('slidimg1')
@@ -16,9 +16,9 @@ let r3 = document.getElementById('slid23');
 let r4 = document.getElementById('slid24');
 
 btn2.onclick = () =>{
-    cnt++;
+count1++;
     console.log(cnt);
-    if (cnt == 1) {
+    if (count1 == 1) {
         y.style.display="none";
         x[2].style.display="none";
         x[1].style.display="none";
@@ -28,7 +28,7 @@ btn2.onclick = () =>{
         r3.style.backgroundColor="";
         r4.style.backgroundColor="";
     }
-    if (cnt == 2) {
+    if (count1 == 2) {
         y.style.display="none";
         x[0].style.display="none";
         x[2].style.display="none";
@@ -38,7 +38,7 @@ btn2.onclick = () =>{
         r3.style.backgroundColor="black";
         r4.style.backgroundColor="";
     }
-    if (cnt == 3) {
+    if (count1 == 3) {
         y.style.display="none";
         x[0].style.display="none";
         x[1].style.display="none";
@@ -48,12 +48,12 @@ btn2.onclick = () =>{
         r3.style.backgroundColor="";
         r4.style.backgroundColor="black";
     }
-    if (cnt == 4) {
+    if (count1 == 4) {
         x[0].style.display="none";
         x[1].style.display="none";
         x[2].style.display="none";
         y.style.display="block";
-        cnt = 0;
+        count1 = 0;
         r1.style.backgroundColor="black";
         r2.style.backgroundColor="";
         r3.style.backgroundColor="";
@@ -62,8 +62,8 @@ btn2.onclick = () =>{
 }
 
 btn1.onclick = () => {
-    cnt--;
-    if (cnt == -1) {
+    count1--;
+    if (count1 == -1) {
         x[0].style.display="none";
         x[1].style.display="none";
         x[2].style.display="block";
@@ -73,7 +73,7 @@ btn1.onclick = () => {
         r3.style.backgroundColor="";
         r4.style.backgroundColor="black";
     }
-    if (cnt == -2) {
+    if (count1 == -2) {
         y.style.display="none";
         x[1].style.display="block";
         x[0].style.display="none";
@@ -83,7 +83,7 @@ btn1.onclick = () => {
         r3.style.backgroundColor="black";
         r4.style.backgroundColor="";
     }
-    if (cnt == -3) {
+    if (count1 == -3) {
         y.style.display="none";
         x[2].style.display="none";
         x[0].style.display="block";
@@ -93,7 +93,7 @@ btn1.onclick = () => {
         r3.style.backgroundColor="";
         r4.style.backgroundColor="";
     }
-    if (cnt == -4) {
+    if (count1 == -4) {
         x[1].style.display="none";
         x[2].style.display="none";
         y.style.display="block";
@@ -102,7 +102,7 @@ btn1.onclick = () => {
         r2.style.backgroundColor="";
         r3.style.backgroundColor="";
         r4.style.backgroundColor="";
-        cnt = 0;
+        count1 = 0;
     }
 }
 
@@ -111,7 +111,7 @@ r1.onclick = () => {
     x[0].style.display="none";
     x[1].style.display="none";
     x[2].style.display="none";
-    cnt = 0;
+    count1 = 0;
     r1.style.backgroundColor="black";
     r2.style.backgroundColor="";
     r3.style.backgroundColor="";
@@ -122,7 +122,7 @@ r2.onclick = () => {
     x[1].style.display="none";
     x[2].style.display="none";
     y.style.display="none";
-    cnt = 1;
+    count1 = 1;
     r2.style.backgroundColor="black";
     r1.style.backgroundColor="";
     r3.style.backgroundColor="";
@@ -134,7 +134,7 @@ r3.onclick = () => {
     x[1].style.display="block";
     x[2].style.display="none";
     y.style.display="none";
-    cnt = 2;
+    count1 = 2;
     r2.style.backgroundColor="";
     r1.style.backgroundColor="";
     r3.style.backgroundColor="black";
@@ -145,9 +145,71 @@ r4.onclick = () => {
     x[1].style.display="none";
     x[2].style.display="block";
     y.style.display="none";
-    cnt = 3
+    count1 = 3
     r2.style.backgroundColor="";
     r1.style.backgroundColor="";
     r3.style.backgroundColor="";
     r4.style.backgroundColor="black";
 }
+
+// Happy customer slider
+
+let count2 = 0;
+
+let btn3 = document.getElementById('slider2-lbtn');
+let btn4 = document.getElementById('slider2-rbtn');
+
+let x1 = document.getElementById('slider2-main1');
+let x2 = document.getElementById('slider2-main2');
+let x3 = document.getElementById('slider2-main3');
+
+let y1 = document.getElementById('slider2-pagenav');
+
+btn4.onclick = () =>{
+    count2++;
+    if (count2 == 1) {
+        x1.style.display="none";
+        x2.style.display="flex";
+        x3.style.display="none";
+        y1.innerText="2/3";
+    }
+    if (count2 == 2) {
+        x1.style.display="none";
+        x2.style.display="none";
+        x3.style.display="flex";
+        y1.innerText="3/3";
+    }
+    if (count2 == 3) {
+        x1.style.display="flex";
+        x2.style.display="none";
+        x3.style.display="none";
+        y1.innerText="1/3";
+        count2 = 0;
+    }
+}
+
+btn3.onclick = () =>{
+    count2--;
+    if (count2 == -1) {
+        x1.style.display="none";
+        x2.style.display="none";
+        x3.style.display="flex";
+        y1.innerText="3/3";
+    }
+    if (count2 == -2) {
+        x3.style.display="none";
+        x2.style.display="flex";
+        x1.style.display="none";
+        y1.innerText="2/3";
+    }
+    if (count2 == -3) {
+        x2.style.display="none";
+        x1.style.display="flex";
+        x3.style.display="none";
+        y1.innerText="1/3";
+        count2 = 0;
+    }
+}
+
+
+
